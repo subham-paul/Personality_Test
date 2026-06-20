@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Personality Test - Question {{ question.id }}{% endblock %}
+
+{% block content %}
+<div class="test-container">
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: {{ progress }}%"></div>
+    </div>
+    
+    <div class="question-card">
+        <h2>Question {{ question.id }} of {{ 5 }}</h2>
+        <p class="question-text">{{ question.question }}</p>
+        
+        <form method="POST" action="{{ url_for('question', question_id=question.id) }}">
+            <div class="options-grid">
+                {% for option in question.options %}
+                <label class="option-card">
+                    <input type="radio" name="answer" value="{{ option.type }}" required>
+                    <span class="option-text">{{ option.text }}</span>
+                </label>
+                {% endfor %}
+            </div>
+            
+            <button type="submit" class="next-button">
+                {% if question.id < 5 %}Next Question {% else %}See Results {% endif %}
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Your Personality Results{% endblock %}
+
+{% block content %}
+<div class="results-container">
+    <div class="results-header">
+        <h1>Your Personality Type</h1>
+        <p class="personality-name">{{ personality.name }}</p>
+    </div>
+    
+    <div class="results-content">
+        <div class="result-card">
+            <h3>About Your Type</h3>
+            <p>{{ personality.description }}</p>
+        </div>
+        
+        <div class="result-card">
+            <h3>Key Traits</h3>
+            <div class="traits-list">
+                {% for trait in personality.traits %}
+                <span class="trait-tag">{{ trait }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="result-card">
+            <h3>Your Score</h3>
+            <p>You matched with <strong>{{ personality.name }}</strong> in {{ score }} out of {{ total_questions }} questions.</p>
+        </div>
+    </div>
+    
+    <div class="action-buttons">
+        <a href="{{ url_for('test') }}" class="cta-button">Retake Test</a>
+        <a href="{{ url_for('index') }}" class="cta-button secondary">Home</a>
+    </div>
+</div>
+{% endblock %}

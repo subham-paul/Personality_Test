@@ -1,0 +1,283 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Personality Test | Discover Your True Self{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Discover Your <span class="highlight">True Personality</span></h1>
+                <p class="hero-subtitle">Unlock the secrets of your mind with our scientifically-validated personality assessment. Understand yourself better in just 5 minutes.</p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('test') }}" class="cta-button primary">Start Free Test</a>
+                    <a href="#how-it-works" class="cta-button secondary">
+                        <i class="fas fa-play-circle"></i> Watch Demo
+                    </a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>No registration required</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% free forever</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Instant results</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <div class="card-icon">🎯</div>
+                        <h4>Analytical Thinker</h4>
+                    </div>
+                    <div class="card card-2">
+                        <div class="card-icon">🌟</div>
+                        <h4>Creative Soul</h4>
+                    </div>
+                    <div class="card card-3">
+                        <div class="card-icon">💫</div>
+                        <h4>Social Butterfly</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-count="50000">0</div>
+                <div class="stat-label">Tests Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="98">0</div>
+                <div class="stat-label">Accuracy Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Personality Types</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="4.9">0</div>
+                <div class="stat-label">User Rating</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose Our Personality Test?</h2>
+            <p class="section-subtitle">Experience the most comprehensive and insightful personality assessment available online</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Deep Self-Discovery</h3>
+                <p>Uncover hidden aspects of your personality and understand what makes you truly unique.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Quick & Efficient</h3>
+                <p>Get meaningful insights in just 5 minutes with our carefully crafted assessment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Detailed Analysis</h3>
+                <p>Receive comprehensive reports with actionable insights for personal growth.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>100% Private</h3>
+                <p>Your data is completely confidential. We never share your results with anyone.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Scientifically Valid</h3>
+                <p>Based on established psychological principles and personality theories.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Track Progress</h3>
+                <p>Retake the test over time to see how your personality evolves and grows.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="process-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">Getting your personalized personality profile is simple and straightforward</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Take the Assessment</h3>
+                    <p>Answer our series of carefully designed questions. Be honest and instinctive.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Get Instant Results</h3>
+                    <p>Receive immediate analysis of your personality type with detailed explanations.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Explore Your Profile</h3>
+                    <p>Dive deep into your comprehensive personality report with actionable insights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Personality Types Preview -->
+<section class="types-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Discover Your Personality Type</h2>
+            <p class="section-subtitle">Our assessment identifies distinct personality archetypes based on psychological research</p>
+        </div>
+        <div class="types-grid">
+            <div class="type-card">
+                <div class="type-icon">🔍</div>
+                <h4>The Analyst</h4>
+                <p>Logical, strategic thinkers who love solving complex problems</p>
+                <div class="type-tags">
+                    <span>INTJ</span>
+                    <span>INTP</span>
+                </div>
+            </div>
+            <div class="type-card">
+                <div class="type-icon">🎨</div>
+                <h4>The Creator</h4>
+                <p>Innovative, imaginative individuals who express themselves creatively</p>
+                <div class="type-tags">
+                    <span>INFJ</span>
+                    <span>INFP</span>
+                </div>
+            </div>
+            <div class="type-card">
+                <div class="type-icon">🤝</div>
+                <h4>The Diplomat</h4>
+                <p>Empathetic, cooperative individuals who seek harmony and understanding</p>
+                <div class="type-tags">
+                    <span>ENFJ</span>
+                    <span>ENFP</span>
+                </div>
+            </div>
+            <div class="type-card">
+                <div class="type-icon">⚡</div>
+                <h4>The Explorer</h4>
+                <p>Spontaneous, energetic thrill-seekers who live in the moment</p>
+                <div class="type-tags">
+                    <span>ESTP</span>
+                    <span>ESFP</span>
+                </div>
+            </div>
+        </div>
+        <div class="types-cta">
+            <p>And 11 more personality types to discover!</p>
+            <a href="{{ url_for('test') }}" class="cta-button outline">Explore All Types</a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>What People Are Saying</h2>
+            <p class="section-subtitle">Join thousands of satisfied users who discovered new insights about themselves</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">★★★★★</div>
+                    <p>"This test completely changed how I understand myself. The insights helped me communicate better with my team and improved my relationships."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SJ</div>
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">★★★★★</div>
+                    <p>"I was skeptical at first, but the accuracy was astounding. It guided me toward a career path that truly fits my personality."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MR</div>
+                    <div class="author-info">
+                        <h4>Michael Rodriguez</h4>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">★★★★★</div>
+                    <p>"As a psychology student, I appreciate the scientific foundation. The detailed report provided insights beyond my expectations."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">EC</div>
+                    <div class="author-info">
+                        <h4>Emily Chen</h4>
+                        <p>Psychology Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="final-cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Discover Your True Self?</h2>
+            <p>Join over 50,000 people who have gained valuable insights into their personality. Take the first step toward greater self-awareness today.</p>
+            <div class="cta-buttons">
+                <a href="{{ url_for('test') }}" class="cta-button primary large">Start Your Personality Journey</a>
+                <a href="{{ url_for('about') }}" class="cta-button secondary large">Learn More About Us</a>
+            </div>
+            <div class="cta-guarantee">
+                <div class="guarantee-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Free & Private</span>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-clock"></i>
+                    <span>5-Minute Test</span>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Instant Results</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
